@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:Locadora.Views"
         mc:Ignorable="d"
         Title="Cadastro de Veiculos" Height="450" Width="800">
-    <Grid Background="#FFEFF46A">
+    <Grid Background="#FFBBA2DD">
         <Grid Margin="10">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFFDFFD3" Offset="1"/>
-                    <GradientStop Color="#FFEBDE88" Offset="0.923"/>
+                    <GradientStop Color="#FFBBA2DD" Offset="1"/>
+                    <GradientStop Color="#FFBBA2DD" Offset="0.923"/>
                 </LinearGradientBrush>
             </Grid.Background>
             <Grid.ColumnDefinitions>

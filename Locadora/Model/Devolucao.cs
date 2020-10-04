@@ -18,6 +18,7 @@ namespace Locadora.Model
         public Cliente Cliente { get; set; }
         public Funcionario Funcionario { get; set; }
         public Veiculo Veiculo { get; set; }
+        public Double ValorMulta { get; set; }
         public DateTime DevolucaoEm { get; set; }
     }
 }

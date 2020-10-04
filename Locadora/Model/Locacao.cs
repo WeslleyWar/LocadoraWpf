@@ -24,6 +24,7 @@ namespace Locadora.Model
         public int QntdDiasAtraso { get; set; }
         public Double ValorSemMulta { get; set; }
         public Double ValorComMulta { get; set; }
+        public Double ValorTotal { get; set; }
         public DateTime LocadoEm { get; set; }
     }
 }

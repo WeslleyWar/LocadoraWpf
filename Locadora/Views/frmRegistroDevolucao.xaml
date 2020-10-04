@@ -13,6 +13,12 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FFFFDB51" Offset="0.904"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Label x:Name="LbVeiculo" Content="DEVOLVER VEÍCULO" HorizontalAlignment="Left" Margin="176,10,0,0" VerticalAlignment="Top" Width="216" FontSize="18" FontWeight="Bold" FontStyle="Italic" FontFamily="Arial Black"/>
         <Label x:Name="LbModelo" Content="MODELO:" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="80" Height="51"/>
         <Label x:Name="LbMarca" Content="MARCA:" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="80" Height="51"/>
