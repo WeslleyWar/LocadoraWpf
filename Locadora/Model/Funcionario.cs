@@ -13,7 +13,7 @@ namespace Locadora.Model
             CriadoEm = DateTime.Now;
         }
         public String ContatoPessoal { get; set; }
-
+        public Boolean PermissãoDirigir { get; set; }
         //public override string ToString()
         //{
         //    return $"Nome: {Nome} | CPF: {Cpf} | Telefone: {Telefone} |" +

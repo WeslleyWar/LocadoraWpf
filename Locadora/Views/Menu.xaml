@@ -10,7 +10,7 @@
         <DockPanel>
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="_Cadastros">
-                    <MenuItem Header="_Cliente" />
+                    <MenuItem Header="_Cliente"/>
                     <MenuItem Header="_Funcionario" />
                     <MenuItem Header="_Veiculo" />
                     <Separator />

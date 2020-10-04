@@ -20,55 +20,62 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="224*" />
+            <RowDefinition Height="139*"/>
         </Grid.RowDefinitions>
-        <Label x:Name="LbNome" Height="25.6">Nome:</Label>
-        <TextBox x:Name="TxtNome" Grid.Column="1" Margin="5,8,-5.4,1.8" Height="19" />
-        <Label x:Name="LbGenero" Grid.Row="1">Genero:</Label>
-        <Label x:Name="LbIdade" Grid.Row="2" Content="Idade:" Margin="0,5.2,0.2,317"/>
-        <Label x:Name="LbDtNasc" Grid.Row="2" Content="Data de Nascimento:" Margin="0,35.2,0.2,286"/>
-        <Label x:Name="LbCpf" Grid.Row="2" Content="Cpf:" Margin="0,66.2,0.2,255"/>
-        <Label x:Name="LbEmail" Grid.Row="2" Content="Email:" Margin="0,97.2,0.2,224"/>
-        <Label x:Name="LbCnh" Grid.Row="2" Content="Cnh:" Margin="0,128.2,0.2,193"/>
-        <Label x:Name="LbTelefone" Grid.Row="2" Content="Telefone:" Margin="0,154.2,0,167"/>
-        <Label x:Name="LbCep" Grid.Row="2" Content="Cep:" Margin="0,180.2,0,141"/>
-        <Label x:Name="LbSalario" Grid.Row="2" Content="Salario:" Margin="0,206.2,0,115"/>
-        <TextBox x:Name="TxtIdade" Grid.Column="1" Margin="5,14.4,-5.4,317.2" Grid.Row="2" />
-        <TextBox x:Name="TxtGenero" Grid.Column="1" Margin="5,7,-5.4,349.2" Grid.Row="1" Grid.RowSpan="2" />
-        <TextBox x:Name="TxtDtNasc" Grid.Column="1" Margin="5,46.4,-5.4,286.2" Grid.Row="2" />
-        <TextBox x:Name="TxtCpf" Grid.Column="1" Margin="5,77.4,-5.4,255.2" Grid.Row="2" />
-        <TextBox x:Name="TxtEmail" Grid.Column="1" Margin="5,107.4,-5.4,224.2" Grid.Row="2" />
-        <TextBox x:Name="TxtCnh" Grid.Column="1" Margin="5,138.4,-5.4,193.2" Grid.Row="2" />
-        <TextBox x:Name="TxtTelefone" Grid.Column="1" Margin="5,164.4,-5.4,167.2" Grid.Row="2" />
-        <TextBox x:Name="TxtCep" Grid.Column="1" Margin="5,190.4,-5.4,141.2" Grid.Row="2" />
-        <TextBox x:Name="TxtSalario" Grid.Column="1" Margin="5,216.4,-5.4,115.2" Grid.Row="2" />
+        <Label x:Name="LbNome" Margin="0,2,0,5" Grid.RowSpan="2" FontSize="14">Nome:</Label>
+        <TextBox x:Name="TxtNome" Grid.Column="1" Margin="5,3,273.6,6" Grid.RowSpan="2" />
+        <Label x:Name="LbGenero" Grid.Row="1" Margin="0,15,0,180" Grid.RowSpan="2" FontSize="14">Genero:</Label>
+        <Label x:Name="LbIdade" Content="Idade:" Margin="385,0,202.6,6" Grid.Column="1" Grid.RowSpan="2" FontSize="14"/>
+        <Label x:Name="LbDtNasc" Grid.Row="2" Content="Data de Nascimento:" Margin="0,37,0,139"/>
+        <Label x:Name="LbCpf" Grid.Row="1" Content="Cpf:" Margin="385,19,202.6,187" Grid.Column="1" Grid.RowSpan="2" FontSize="14"/>
+        <Label x:Name="LbEmail" Grid.Row="2" Content="Email:" Margin="0,85,0,81" FontSize="14"/>
+        <Label x:Name="LbCnh" Grid.Row="2" Content="Cnh:" Margin="385,37,202.6,139" Grid.Column="1" FontSize="14"/>
+        <Label x:Name="LbTelefone" Grid.Row="2" Content="Telefone:" Margin="380,85,203.6,81" Grid.Column="1" RenderTransformOrigin="0.46,0.407" FontSize="14"/>
+        <Label x:Name="LbCep" Grid.Row="2" Content="Cep:" Margin="385,143,198.6,23" Grid.Column="1" FontSize="14" RenderTransformOrigin="0.456,0.769"/>
+        <Label x:Name="LbSalario" Grid.Row="2" Content="Salario:" Margin="0,143,0,23" FontSize="14"/>
+        <TextBox x:Name="TxtIdade" Grid.Column="1" Margin="456,3,9.6,6" Grid.RowSpan="2" />
+        <TextBox x:Name="TxtDtNasc" Grid.Column="1" Margin="5,37,0,139" Grid.Row="2" HorizontalAlignment="Left" Width="375" />
 
-        <Button x:Name="btnCancelar" Background="#FFFD9DAE" 
+        <TextBox x:Name="TxtCpf" Grid.Column="1" Margin="456,19,9.6,192" Grid.Row="1" Grid.RowSpan="2" />
+        <TextBox x:Name="TxtEmail" Grid.Column="1" Margin="5,90,273.6,86" Grid.Row="2" />
+        <TextBox x:Name="TxtCnh" Grid.Column="1" Margin="456,37,9.6,139" Grid.Row="2" />
+        <TextBox x:Name="TxtTelefone" Grid.Column="1" Margin="456,90,9.6,86" Grid.Row="2" />
+        <TextBox x:Name="TxtCep" Grid.Column="1" Margin="456,143,9.6,23" Grid.Row="2" />
+        <TextBox x:Name="TxtSalario" Grid.Column="1" Margin="5,143,273.6,23" Grid.Row="2" />
+
+        <Button x:Name="btnCancelar" Background="#FFDEAD" 
         BorderBrush="Black" BorderThickness="1" 
-        Click="OnClick1" ClickMode="Hover" Grid.Column="1" Margin="10,262.4,523.6,22.2" Grid.Row="2">
+        Click="OnClick1" ClickMode="Hover" Grid.Column="1" Margin="10,56,523.6,17.2" Grid.Row="3">
             CANCELAR
         </Button>
 
         <Button x:Name="btnBuscar" Background="#FFA8FAEA" 
         BorderBrush="Black" BorderThickness="1" 
-        Click="OnClick1" ClickMode="Hover" Grid.Column="1" Margin="260,262.4,273.6,22.2" Grid.Row="2">
+        Click="OnClick1" ClickMode="Hover" Grid.Column="1" Margin="168,56,365.6,17.2" Grid.Row="3">
             BUSCAR
         </Button>
 
         <Button x:Name="btnSalvar" Background="#FFC4FAA8" 
         BorderBrush="Black" BorderThickness="1" 
-        Click="OnClick1" ClickMode="Hover" Grid.Column="1" Margin="524,262.4,9.6,22.2" Grid.Row="2">
+        Click="OnClick1" ClickMode="Hover" Grid.Column="1" Margin="500,56,33.6,17.2" Grid.Row="3">
             SALVAR
         </Button>
 
-        <TextBox x:Name="txtLogo" Margin="0,275.6,0,10.2" Grid.Row="2" Text="CADASTRO &#xD;&#xA;DE CLIENTES" FontWeight="Bold" FontStyle="Italic" FontFamily="Comic Sans MS" FontSize="16">
-            <TextBox.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FFF1FFE0" Offset="0.093"/>
-                </LinearGradientBrush>
-            </TextBox.Background>
-        </TextBox>
+        <Image Source="/Util/logo.png" Margin="-73,10,580.6,10.2" Grid.Row="3" Grid.ColumnSpan="2" />
+
+
+        <ComboBox x:Name="CmbGenero" Grid.Column="1" Margin="5,18,273.6,192" SelectionChanged="ComboBox_SelectionChanged" Grid.Row="1" Grid.RowSpan="2">
+            <ComboBoxItem Content="Masculino"/>
+            <ComboBoxItem Content="Feminino"/>
+            <ComboBoxItem Content="Outro"/>
+            <ComboBoxItem Content="Não informar"/>
+        </ComboBox>
+        <Button x:Name="btnExcluir" Background="#FF0000" 
+            BorderBrush="Black" BorderThickness="1" 
+            Click="OnClick1" ClickMode="Hover" Grid.Column="1" Margin="335,56,198.6,17.2" Grid.Row="3" Content="EXCLUIR"/>
+
+
 
     </Grid>
 </Window>

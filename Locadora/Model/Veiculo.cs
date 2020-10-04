@@ -21,6 +21,9 @@ namespace Locadora.Model
         public string TipoVeiculo { get; set; }
         public string TipoCombustivel { get; set; }
         public string Cor { get; set; }
+        public int QntdPortas { get; set; }
+        public int Potencia { get; set; }
+        public int Ano { get; set; }
         public string StatusVeiculo { get; set; }//Se esta ocupado ou disponivel
         public DateTime CriadoEm { get; set; }
 
